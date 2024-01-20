@@ -1,0 +1,39 @@
+@use "../setting/setting";
+
+.p-price{
+  padding: 24px 0;
+}
+
+.p-price__button{
+  p{
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .c-button{
+    margin: 12px auto 0;;
+
+  }
+}
+
+@media (min-width: 1024px){
+  .p-price{
+    background: setting.$color-sub;
+    padding: 64px 0;
+  }
+
+  .p-price__table{
+    background: #fff;
+    max-width: 720px;
+    padding: 40px 64px 64px;
+    margin: 40px auto 0;
+
+    th{
+      width: 240px;
+    }
+  }
+
+  .p-price__button{
+    margin-top: 40px;
+  }
+}

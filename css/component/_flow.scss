@@ -1,0 +1,50 @@
+@use "../setting/setting";
+
+.c-flow{
+  max-width: 800px;
+  padding-top: 32px;
+}
+
+.c-flow__item{
+  padding-bottom: 40px;
+}
+
+.c-flow__title{
+  display: flex;
+  align-items: center;
+
+  span{
+    color: #fff;
+    background: setting.$color-main;
+    padding: 4px 8px;
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+  }
+
+  h3{
+    padding-left: 8px;
+  }
+}
+
+.c-flow__texts{
+  padding-top: 24px;
+
+  a{
+    font-weight: bold;
+    color: setting.$color-link;
+    text-decoration: underline;
+  }
+
+}
+
+@media (min-width: 1024px){
+  .c-flow{
+    padding-top: 60px;
+  }
+
+  .c-flow__item{
+    padding-bottom: 56px;
+  }
+
+}

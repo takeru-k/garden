@@ -1,0 +1,76 @@
+@use "../setting/setting";
+
+.p-flow{
+  margin: 32px auto 0;
+  max-width: 680px;
+}
+
+.p-flow__item{
+  margin-bottom: 40px;
+}
+
+.p-flow__heading{
+  display: flex;
+  align-items: center;
+
+  span{
+  background: setting.$color-main;
+  color: #fff;
+  padding: 20px;
+  border-radius: 50%; 
+  width: 40px; /* 背景が16px + 16pxの余白があるため32pxに変更 */
+  height: 40px; /* 背景が16px + 16pxの余白があるため32pxに変更 */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* 中央配置のために追加 */
+  font-size: 20px;
+  }
+
+  h3{
+    padding-left: 16px;
+    font-size: 18px;
+  }
+}
+
+.p-flow__text{
+  margin-top: 12px;
+
+  a{
+    color: setting.$color-link;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 768px){
+  .p-flow__text{
+    padding-left: 56px;
+  }
+}
+
+@media (min-width: 1024px){
+  .p-flow__heading{
+
+    span{
+    padding: 24px;
+    width: 48px;
+    height: 48px; 
+    font-size: 24px;
+    }
+
+    h3{
+      font-size: 20px;
+    }
+  }
+
+  .p-flow__text{
+    padding-left: 64px;
+  }
+
+  .p-flow{
+    margin-top: 64px;
+  }
+
+  .p-flow__item{
+    margin-bottom: 56px;
+  }
+}

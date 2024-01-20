@@ -1,0 +1,19 @@
+@use "../setting/setting";
+
+.p-topService{
+  padding: 48px 0 40px;
+  position: relative;
+  overflow: hidden;  
+}
+
+@media (min-width: 768px){
+  .p-topService{
+    padding: 40px 0 64px;
+  }
+}
+
+@media (min-width: 1024px){
+  .p-topService{
+    padding: 108px 0 128px;
+  }
+}

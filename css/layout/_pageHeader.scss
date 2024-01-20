@@ -1,0 +1,39 @@
+@use "../setting/setting";
+
+.l-pageHeader{
+  background: url('../images/common/pageHeader.jpg')center center/cover no-repeat;
+  padding: 36px 0 24px;
+}
+
+.l-pageHeader__heading{
+
+  span{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1.1;
+    letter-spacing: 1px;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.6)
+  }
+
+  h2{
+    color: #fff;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1024px){
+  .l-pageHeader{
+    padding: 64px 0;
+  }
+
+  .l-pageHeader__heading{
+    span{
+      font-size: 20px;
+    }
+
+    h2{
+      font-size: 28px;
+    }
+  }
+}

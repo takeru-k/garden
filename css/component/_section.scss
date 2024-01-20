@@ -1,0 +1,48 @@
+@use "../setting/setting";
+.c-section{
+  padding: 40px 0;
+}
+
+.c-section + .c-section{
+  padding-top: 0;
+}
+
+.c-section__heading{
+  span{
+    color: #007860;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    display: block;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  h2{
+    position: relative;
+    text-align: center;
+  }  
+}
+
+@media (min-width: 1024px){
+  .c-section{
+    padding: 64px 0;
+  }
+
+  .c-section__heading{
+    span{
+      font-size: 20px;
+    }
+
+    h2{
+      font-size: 34px;
+      line-height: 1.5;
+    }
+  }
+}
+
+.c-works + .c-section{
+  border-top: 1px solid setting.$color-sub;
+}

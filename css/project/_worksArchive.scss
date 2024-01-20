@@ -1,0 +1,36 @@
+@use "../setting/setting";
+
+.p-worksArchive{
+  margin: 0 auto;
+  padding: 24px 0;
+}
+
+.p-worksArchive__item{
+  margin-bottom: 40px;
+
+  &:hover{
+    opacity: .6;
+  }
+}
+
+@media (min-width: 768px){
+  .p-worksArchive{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .p-worksArchive__item{
+    width: 46%;
+  }
+}
+
+@media (min-width: 1024px){
+  .p-worksArchive{
+    padding: 64px 0;
+  }
+
+  .p-worksArchive__item{
+    width: 30%;
+  }
+}

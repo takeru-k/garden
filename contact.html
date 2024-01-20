@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>花巻ガーデン</title>
+    <!-- slickのCSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="l-header l-header__lower js-header">
+  <div class="l-header__inner">
+    <h1 class="l-header__logo">
+      <a href="index.html">
+        <img src="images/header/logo-header.svg" alt="">
+      </a>        
+      </h1><!-- /.l-header__logo -->
+  </div><!-- /.l-header__inner -->
+</header><!-- /.l-header -->
+
+<div class="p-contact">
+  <div class="l-inner">
+    <div class="p-contact__body">
+      <div class="p-contact__lead">
+        <p>ご質問・ご相談、お見積もりなど、お気軽にお問い合わせください。</p>
+        <p>お急ぎの方はお電話ください。</p>
+      </div><!-- /.p-contact__lead -->
+
+          <div class="p-contact__tel">
+            <a href="tel:0198-23-3970"><small>tel</small>0198-23-3970</a>
+            <span>受付時間: 平日9:00~18:00</span>
+          </div><!-- /.p-contact__tel -->
+
+      <div class="p-contact__lead">
+        <p>メールでのお問い合わせは、下記フォームへ必要事項をご記入いただき送信してください。</p>
+      </div><!-- /.p-contact__lead -->
+
+      <div class="p-contact__form">
+        <div class="c-form">
+          <table class="contactTable">
+            <tbody>
+            <tr>
+              <th>
+                <label for="company" class="inputLabel">お名前</label>
+              </th>
+              <td>
+                <div class="inputField">
+                  <input type="text" id="name" name="name">
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <label for="company" class="inputLabel">会社/事業所名</label><span class="require">必須</span>
+              </th>
+              <td>
+                <div class="inputField">
+                  <input type="text" id="company" name="company">
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <label for="email" class="inputLabel">メールアドレス<span class="require">必須</span>
+                  
+                </label>
+              </th>
+              <td>
+                <div class="inputField">
+                  <input type="email" id="email" name="email" placeholder="yamada@sample.co.jp" required>
+                  <p class="errorText">正しい形式のメールアドレスを入力してください。</p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <label for="email" class="inputLabel">電話番号
+                  <span class="require">必須</span>
+                </label>
+              </th>
+              <td>
+                <div class="inputField">
+                  <input type="email" id="email" name="email" placeholder="yamada@sample.co.jp" required>
+                  <p class="errorText">正しい形式のメールアドレスを入力してください。</p>
+                </div>
+              </td>
+            </tr>
+            
+            <tr>
+              <th>
+                <label for="contact_msg" class="inputLabel">お問合せ内容
+                  
+                </label>
+              </th>
+              <td>
+                <div class="inputField">
+                  <textarea name="contact_msg" id="contact_msg" cols="30" rows="10" placeholder="例）詳細を聞かせてほしい、とりあえず提案しに来てほしい" required></textarea>
+                  <p class="errorText">お問合せ内容を入力してください。</p>
+                </div>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+
+          <div class="privacyBox">
+            <p><a href="http://www.sendai-lang.com/pdf/personal.pdf" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>に同意して、送信してください。</p>
+            
+          </div>
+
+          <div class="formBtns">
+            <button class="buttonAction">この内容で送信する</button>
+          </div>
+        </div><!-- /.c-form -->
+      </div><!-- /.p-contact__form -->
+    </div><!-- /.p-contact__body -->
+  </div><!-- /.l-inner -->
+</div><!-- /.p-contact -->
+
+  <div class="l-footer">
+  <div class="l-inner">
+    <div class="l-footer__contents">
+      <div class="l-footer__logo">
+        <img src="images/footer/logo-footer.svg" alt="">
+      </div><!-- /.l-footer__logo -->
+
+
+    </div><!-- /.l-footer__contents -->
+
+    <p class="l-footer__copy"><a href="https://web-iwate.com/">&copy; Knowledge Service</a></p><!-- /.l-footer__copy -->
+  </div><!-- /.l-inner -->
+</div><!-- /.l-footer -->
+  
+<script
+  src="https://code.jquery.com/jquery-3.6.3.min.js"
+  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+  crossorigin="anonymous"></script>
+  <!-- slickのJavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script> 
+</body>
+</html>

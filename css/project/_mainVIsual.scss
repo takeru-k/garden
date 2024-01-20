@@ -1,0 +1,169 @@
+@use "../setting/setting";
+.p-mainVisual{
+  height: 64vh;
+  background: setting.$color-sub;
+  border-top: 1px solid #dadada;
+  overflow: hidden;
+}
+
+.p-mainVisual__wrapper{
+  padding: 40px 20px 42px;
+  position: relative;
+}
+
+.p-mainVisual__inner{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.p-mainVisual__heading{
+  position: relative;
+  z-index: 2;
+  line-height: 1.5;
+
+  p{
+    letter-spacing: .04em;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+
+  h1{
+    font-size: 34px;
+    margin-top: 16px;
+    position: relative;
+    font-family: "Noto Serif JP",serif;
+    margin-bottom: 24px;
+  }
+}
+
+.p-mainVisual__img{
+  margin-top: 40px;
+}
+
+.p-mainVisual__btn{
+  margin-left: 0;
+}
+
+@media not all and (min-width: 767px){
+  .p-mainVisual__img{
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    height: 90%;
+
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top; 
+    }
+  }
+}
+
+/*================================
+	tab
+=================================*/
+
+@media (min-width: 768px){
+  .p-mainVisual{
+    position: relative;
+    height: 54vh;
+  }
+
+  .p-mainVisual__wrapper{
+    width: 94%;
+    position: relative;
+    margin-left: auto;
+  }
+
+  .p-mainVisual__inner{
+    display: flex;
+    max-width: 1440px;
+    padding-right: 3%;
+    padding-left: 3%;
+    margin: 0 auto;
+  }
+
+  .p-mainVisual__content{
+    width: 54%;
+  }
+
+.p-mainVisual__img{
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  right: 0;
+  top: 0;
+
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top; 
+    opacity: .8;
+  }
+}
+
+.p-mainVisual__heading{
+  h1{
+    padding-top: 20px;
+  }
+  p{
+    line-height: 2;
+  }
+}
+
+.p-mainVisual__desc{
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  color: #34527e;
+  font-size: 12px;
+  letter-spacing: .2rem;
+  position: absolute;
+  top: 32%;
+  left: 2%;
+}
+
+
+/*================================
+	PC
+=================================*/
+
+@media (min-width: 1024px){
+  .p-mainVisual{
+    height: 64vh;
+  }
+
+  .p-mainVisual__heading{
+    p{
+      font-size: 16px;
+    }
+
+    h1{
+      font-size: 48px;
+    }
+  }
+
+  .p-mainVisual__img{
+    position: absolute;
+    width: 80%;
+    height: 110%;
+    right: 0;
+    top: 0;
+
+    img{
+      width: 100%;
+      height: 110%;
+      object-fit: cover;
+      object-position: top; 
+      opacity: .8;
+    }
+  }
+}
+
+.p-mainVisual__wrapper{
+    padding: 64px 0;
+  }
+}

@@ -1,0 +1,171 @@
+@use "../setting/setting";
+
+.c-works{
+  padding: 40px 0 80px;
+  background-color: #ccc;
+  background-image: linear-gradient(-90deg, transparent 1px, #fff 1px), linear-gradient(transparent 1px, #fff 1px);
+  background-size: 25px 25px;
+
+  .l-inner{
+    padding-right: 0;
+  }
+}
+
+.c-works__link{
+  margin-top: 40px;
+  padding-right: 6%;
+}
+
+
+.c-works__header{
+  padding-top: 4px;
+
+  span{
+    font-size: 12px;
+    color: #6C94C9;
+    border: 1px solid #6C94C9;
+    padding: 1px 8px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 12px;
+  }
+
+  h3{
+    font-size: 18px;
+    padding-top: 4px;
+    font-weight: normal;
+  }
+
+  p{
+    font-size: 14px;
+    padding-top: 4px;
+    color: setting.$color-link;
+    text-decoration: underline;
+    position: relative;
+    display: inline-block;
+
+    &:after{
+      content: "";
+      background: url(../images/icon/new-window.svg) 0 0/contain no-repeat;
+      margin: 0 6px 0;
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}
+
+.c-works__content{
+  margin: 32px 0 24px;
+}
+
+.c-works__list{
+  padding-top: 20px;
+}
+
+.c-works__item{
+  transition: .5s;
+
+  &:hover{
+    opacity: .6;
+  }
+}
+
+.c-works__thumbnail{
+  img{
+    height: 240px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 768px){
+  .c-works{
+    position: relative;
+    padding: 64px 0;
+  }
+
+  .c-works__thumbnail{
+    img{
+      height: 260px;
+    }
+  }
+}
+
+@media (min-width: 1024px){
+  .c-works{
+    padding: 40px 0 120px;
+  }
+
+  .c-works__thumbnail{
+    img{
+      height: 220px;
+    }
+  }
+}
+
+/*================================
+	Swiper
+=================================*/
+
+.swiper-slide{
+  margin-right: 20px;
+}
+
+.swiper-pagination-bullets {
+    display: none;
+}
+
+.swiper{
+  position: relative;
+}
+
+/* 幅・高さを指定 */
+.swiper-button-prev,
+.swiper-button-next {
+  height: 50px;
+  width: 50px;
+  
+  &:hover{
+    opacity: .6;
+  }
+}
+ 
+/* 矢印を消す、画像に変更 */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 40px;
+  width: 40px;
+  margin: auto;
+}
+ 
+/* 前に戻る画像パス */
+.swiper-button-prev:after {
+  background-image: url(../images/icon/arrow-before.svg);
+}
+/* 次に進む画像パス */
+.swiper-button-next:after {
+  background-image: url(../images/icon/arrow-next.svg);
+}
+
+.swiper-btn{
+  display: none;
+
+  @media (min-width: 768px){
+    display: flex;
+    position: absolute;
+    top: 120px;
+    left: 80%;
+    width: 140px;
+  }
+
+  @media (min-width: 1024px){
+    top: 88px;
+  }
+  
+}
+

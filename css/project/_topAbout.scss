@@ -1,0 +1,37 @@
+@use "../setting/setting";
+
+.p-topAbout{
+  padding: 48px 0 40px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 40px;
+  
+}
+
+@media (min-width: 768px){
+  .p-topAbout{
+    padding: 40px 0 64px;
+  }
+}
+
+
+@media (min-width: 1024px){
+  .p-topAbout{
+    padding: 108px 0 128px;
+
+    &:before{
+      content: '';
+      display: block;
+      position: absolute;
+      right: -100px;
+      top: 0;
+      height: 100%;
+      width: 660px;
+      background-repeat: no-repeat;
+      background-position: left top;
+      background-size: cover;
+      background-image: url(../images/rectangle.png);
+      z-index: -1;
+    }
+  }
+}
